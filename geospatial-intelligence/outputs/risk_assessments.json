@@ -1,0 +1,77 @@
+[
+  {
+    "location": "Los Angeles",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "composite_risk": 0.357,
+    "risk_factors": {
+      "proximity_to_superfund": 0,
+      "air_quality_risk": 0.525,
+      "water_vulnerability": 0.3,
+      "demographic_vulnerability": 0.7
+    },
+    "category": "Moderate Risk - Routine Monitoring",
+    "priority": 3,
+    "nearest_superfund": {
+      "name": "Operating Industries Inc Landfill",
+      "distance_km": 23.66
+    },
+    "air_quality": {
+      "nearest_station": "Los Angeles",
+      "aqi": 105,
+      "distance_km": 0.0
+    },
+    "water_sources_within_5km": 0,
+    "timestamp": "2025-11-25T16:07:02.314404"
+  },
+  {
+    "location": "San Diego",
+    "latitude": 32.7157,
+    "longitude": -117.1611,
+    "composite_risk": 0.262,
+    "risk_factors": {
+      "proximity_to_superfund": 0,
+      "air_quality_risk": 0.34,
+      "water_vulnerability": 0.3,
+      "demographic_vulnerability": 0.5
+    },
+    "category": "Low Risk",
+    "priority": 4,
+    "nearest_superfund": {
+      "name": "Operating Industries Inc Landfill",
+      "distance_km": 156.2
+    },
+    "air_quality": {
+      "nearest_station": "San Diego",
+      "aqi": 68,
+      "distance_km": 0.0
+    },
+    "water_sources_within_5km": 0,
+    "timestamp": "2025-11-25T16:07:02.314913"
+  },
+  {
+    "location": "San Francisco",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "composite_risk": 0.243,
+    "risk_factors": {
+      "proximity_to_superfund": 0,
+      "air_quality_risk": 0.275,
+      "water_vulnerability": 0.3,
+      "demographic_vulnerability": 0.5
+    },
+    "category": "Low Risk",
+    "priority": 4,
+    "nearest_superfund": {
+      "name": "Iron Mountain Mine",
+      "distance_km": 321.52
+    },
+    "air_quality": {
+      "nearest_station": "San Francisco",
+      "aqi": 55,
+      "distance_km": 0.0
+    },
+    "water_sources_within_5km": 0,
+    "timestamp": "2025-11-25T16:07:02.315362"
+  }
+]

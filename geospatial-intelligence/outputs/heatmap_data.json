@@ -1,0 +1,33 @@
+{
+  "type": "heatmap",
+  "bounds": {
+    "min_lat": 32.7157,
+    "max_lat": 37.7749,
+    "min_lon": -122.4194,
+    "max_lon": -117.1611
+  },
+  "points": [
+    {
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "intensity": 0.357,
+      "category": "Moderate Risk - Routine Monitoring"
+    },
+    {
+      "lat": 32.7157,
+      "lon": -117.1611,
+      "intensity": 0.262,
+      "category": "Low Risk"
+    },
+    {
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "intensity": 0.243,
+      "category": "Low Risk"
+    }
+  ],
+  "metadata": {
+    "point_count": 3,
+    "generated_at": "2025-11-25T16:07:02.315503"
+  }
+}

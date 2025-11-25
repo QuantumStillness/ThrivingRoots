@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "post_type": "environmental_layer",
+      "post_title": "Los Angeles",
+      "post_status": "publish",
+      "meta_input": {
+        "_eic_latitude": 34.0522,
+        "_eic_longitude": -118.2437,
+        "_eic_data_type": "air_quality",
+        "_eic_properties": "{\"location\": \"Los Angeles\", \"pm25\": 45.2, \"pm10\": 78.5, \"ozone\": 0.065, \"aqi\": 105, \"category\": \"Unhealthy for Sensitive Groups\", \"timestamp\": \"2025-11-25T16:05:46.065003\"}",
+        "_eic_source_hash": "919d8dc1767c3a0ddeb95d8572a60a5ce68c8fe4f3734e685a6d2e2b50b2150d"
+      }
+    },
+    {
+      "post_type": "environmental_layer",
+      "post_title": "San Diego",
+      "post_status": "publish",
+      "meta_input": {
+        "_eic_latitude": 32.7157,
+        "_eic_longitude": -117.1611,
+        "_eic_data_type": "air_quality",
+        "_eic_properties": "{\"location\": \"San Diego\", \"pm25\": 28.3, \"pm10\": 52.1, \"ozone\": 0.048, \"aqi\": 68, \"category\": \"Moderate\", \"timestamp\": \"2025-11-25T16:05:46.065033\"}",
+        "_eic_source_hash": "1b8f25bfbb90f29dbd38272ceb6a8a07b1e36c773a971bcc6049e515b2b817b9"
+      }
+    },
+    {
+      "post_type": "environmental_layer",
+      "post_title": "San Francisco",
+      "post_status": "publish",
+      "meta_input": {
+        "_eic_latitude": 37.7749,
+        "_eic_longitude": -122.4194,
+        "_eic_data_type": "air_quality",
+        "_eic_properties": "{\"location\": \"San Francisco\", \"pm25\": 22.1, \"pm10\": 41.3, \"ozone\": 0.042, \"aqi\": 55, \"category\": \"Moderate\", \"timestamp\": \"2025-11-25T16:05:46.065035\"}",
+        "_eic_source_hash": "2480ddf3a02720b30f1dc0fb9bfaa34883ce74bd5a07415fd3c935e77d4791d9"
+      }
+    }
+  ],
+  "meta": {
+    "import_date": "2025-11-25T16:05:49.738520",
+    "data_hash": "8bde774a0b1c4dafb68dca4951aaf88f1c53708f7f748a663730a78d9aee6609",
+    "source": "geospatial_intelligence_processor"
+  }
+}

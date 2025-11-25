@@ -1,0 +1,139 @@
+{
+  "generated_at": "2025-11-25T16:10:07.783471",
+  "files_checked": 3,
+  "file_reports": [
+    {
+      "file": "../outputs/california_air_quality.geojson",
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "timestamp": "2025-11-25T16:10:07.783625"
+      },
+      "consistency": {
+        "total_features": 3,
+        "unique_properties": 7,
+        "property_completeness": {
+          "location": 100.0,
+          "pm25": 100.0,
+          "pm10": 100.0,
+          "ozone": 100.0,
+          "aqi": 100.0,
+          "category": 100.0,
+          "timestamp": 100.0
+        },
+        "incomplete_properties": {},
+        "completeness_score": 100.0
+      },
+      "freshness": {
+        "fresh": true,
+        "age_days": 0,
+        "generated_at": "2025-11-25T16:05:46.065051",
+        "max_age_days": 30
+      },
+      "spatial_extent": {
+        "actual_bounds": {
+          "min_lon": -122.4194,
+          "max_lon": -117.1611,
+          "min_lat": 32.7157,
+          "max_lat": 37.7749
+        },
+        "center": {
+          "lon": -119.79025,
+          "lat": 35.2453
+        }
+      },
+      "data_hash": "8bde774a0b1c4dafb68dca4951aaf88f1c53708f7f748a663730a78d9aee6609",
+      "quality_score": 100.0
+    },
+    {
+      "file": "../outputs/california_water_quality.geojson",
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "timestamp": "2025-11-25T16:10:07.786083"
+      },
+      "consistency": {
+        "total_features": 397,
+        "unique_properties": 4,
+        "property_completeness": {
+          "site_code": 100.0,
+          "site_name": 100.0,
+          "parameter": 100.0,
+          "values": 100.0
+        },
+        "incomplete_properties": {},
+        "completeness_score": 100.0
+      },
+      "freshness": {
+        "fresh": true,
+        "age_days": 0,
+        "generated_at": "2025-11-25T16:05:46.908731",
+        "max_age_days": 30
+      },
+      "spatial_extent": {
+        "actual_bounds": {
+          "min_lon": -124.22175,
+          "max_lon": -114.468111,
+          "min_lat": 32.778325,
+          "max_lat": 41.973
+        },
+        "center": {
+          "lon": -119.3449305,
+          "lat": 37.375662500000004
+        }
+      },
+      "data_hash": "06f965c406e90efbcbbfa9935653b194c0b34c4a08295ba8a997afc2681c8d51",
+      "quality_score": 100.0
+    },
+    {
+      "file": "../outputs/california_superfund_sites.geojson",
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "timestamp": "2025-11-25T16:10:07.789669"
+      },
+      "consistency": {
+        "total_features": 2,
+        "unique_properties": 6,
+        "property_completeness": {
+          "SITE_NAME": 100.0,
+          "EPA_ID": 100.0,
+          "NPL_STATUS": 100.0,
+          "SITE_STATUS": 100.0,
+          "CITY": 100.0,
+          "COUNTY": 100.0
+        },
+        "incomplete_properties": {},
+        "completeness_score": 100.0
+      },
+      "freshness": {
+        "fresh": true,
+        "age_days": 0,
+        "generated_at": "2025-11-25T16:05:49.736923",
+        "max_age_days": 30
+      },
+      "spatial_extent": {
+        "actual_bounds": {
+          "min_lon": -122.5236,
+          "max_lon": -118.0631,
+          "min_lat": 33.9011,
+          "max_lat": 40.6653
+        },
+        "center": {
+          "lon": -120.29335,
+          "lat": 37.2832
+        }
+      },
+      "data_hash": "b87f68c181797b9ff934cb934390c0e12c8bb39e93097e4373422814987be30d",
+      "quality_score": 100.0
+    }
+  ],
+  "summary": {
+    "average_quality_score": 100.0,
+    "files_passed": 3,
+    "files_failed": 0
+  }
+}

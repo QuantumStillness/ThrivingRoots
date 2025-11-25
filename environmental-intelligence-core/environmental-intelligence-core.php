@@ -85,6 +85,7 @@ final class EIC_Core {
         require_once EIC_PLUGIN_DIR . 'includes/class-eic-post-types.php';
         require_once EIC_PLUGIN_DIR . 'includes/class-eic-taxonomies.php';
         require_once EIC_PLUGIN_DIR . 'includes/class-eic-woocommerce.php';
+        require_once EIC_PLUGIN_DIR . 'includes/class-eic-geospatial.php';
         
         // Admin includes
         if ( is_admin() ) {
@@ -114,6 +115,9 @@ final class EIC_Core {
         if ( class_exists( 'WooCommerce' ) ) {
             EIC_WooCommerce::init();
         }
+        
+        // Initialize Geospatial features
+        EIC_Geospatial::init();
 
         // Init action
         do_action( 'eic_init' );

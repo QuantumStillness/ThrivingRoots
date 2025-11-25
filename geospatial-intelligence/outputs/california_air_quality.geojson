@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "data_type": "air_quality",
+    "feature_count": 3,
+    "generated_at": "2025-11-25T16:05:46.065051",
+    "crs": "EPSG:4326"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      "properties": {
+        "location": "Los Angeles",
+        "pm25": 45.2,
+        "pm10": 78.5,
+        "ozone": 0.065,
+        "aqi": 105,
+        "category": "Unhealthy for Sensitive Groups",
+        "timestamp": "2025-11-25T16:05:46.065003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1611,
+          32.7157
+        ]
+      },
+      "properties": {
+        "location": "San Diego",
+        "pm25": 28.3,
+        "pm10": 52.1,
+        "ozone": 0.048,
+        "aqi": 68,
+        "category": "Moderate",
+        "timestamp": "2025-11-25T16:05:46.065033"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "location": "San Francisco",
+        "pm25": 22.1,
+        "pm10": 41.3,
+        "ozone": 0.042,
+        "aqi": 55,
+        "category": "Moderate",
+        "timestamp": "2025-11-25T16:05:46.065035"
+      }
+    }
+  ]
+}
