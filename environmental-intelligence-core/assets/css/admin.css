@@ -1,0 +1,73 @@
+/**
+ * Environmental Intelligence Core - Admin Styles
+ * @package EnvironmentalIntelligenceCore
+ * @version 1.0.0
+ */
+
+/* Stats Grid */
+.eic-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.eic-stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.eic-stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.eic-stat-card p {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    color: #1d2327;
+}
+
+/* Product Site Info */
+.eic-product-site-info {
+    background: #f7f7f7;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #2271b1;
+    border-radius: 4px;
+}
+
+.eic-product-site-info h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Meta Box Styling */
+.eic-meta-box-field {
+    margin-bottom: 15px;
+}
+
+.eic-meta-box-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .eic-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .eic-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
