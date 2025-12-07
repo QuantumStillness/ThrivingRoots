@@ -8,7 +8,7 @@
 
 ## Overview
 
-The **Food Safety Intelligence** module extends ThrivingRoots' environmental intelligence capabilities into the realm of food safety. Using the **Mindful Ingredient Safety Standard (MISS)** framework, this module provides workers and consumers with workplace-style safety information about food ingredients and contaminants.
+The **Food Safety Intelligence** module extends ThrivingRoots' environmental intelligence capabilities into the realm of food safety. Using the **Mindful Substance Data Series (MSDS)** framework, this module provides workers and consumers with workplace-style safety information about food ingredients and contaminants.
 
 ### Mission
 
@@ -18,7 +18,7 @@ Empower workers to apply their safety training from the job site to their dinner
 
 ## What's Included
 
-### 1. MISS Next.js Web Application
+### 1. MSDS Next.js Web Application
 
 A production-ready web app that displays food ingredient safety information in a format familiar to safety-trained workers.
 
@@ -38,7 +38,7 @@ Complete PostgreSQL/Supabase schema for food safety data.
 **Location:** `database/`
 
 **Files:**
-- `miss_database_schema.sql` - Core MISS tables
+- `miss_database_schema.sql` - Core MSDS tables
 - `miss_api_and_rls.sql` - Row Level Security and API functions
 - `miss_sample_data.sql` - 5 flagship ingredients with references
 - `environmental_data_schema.sql` - Environmental data tables for cross-module integration
@@ -68,7 +68,7 @@ Production-ready sticker mockups and QR codes.
 ### Deployment Steps
 
 1. **Set up database:**
-   - Execute SQL files in Supabase SQL Editor (see `MISS_INTEGRATION_GUIDE.md`)
+   - Execute SQL files in Supabase SQL Editor (see `MSDS_INTEGRATION_GUIDE.md`)
 
 2. **Deploy web app:**
    - Connect ThrivingRoots repository to Vercel
@@ -79,7 +79,7 @@ Production-ready sticker mockups and QR codes.
    - Use designs in `sticker-designs/` directory
    - QR codes link to your deployed web app
 
-**Full instructions:** See `../MISS_INTEGRATION_GUIDE.md`
+**Full instructions:** See `../MSDS_INTEGRATION_GUIDE.md`
 
 ---
 
@@ -107,7 +107,7 @@ Production-ready sticker mockups and QR codes.
 
 ## Cross-Module Integration
 
-The MISS module shares a Supabase backend with the Environmental Intelligence module, enabling powerful cross-domain insights:
+The MSDS module shares a Supabase backend with the Environmental Intelligence module, enabling powerful cross-domain insights:
 
 - **Link contaminated sites to affected food sources**
 - **Track bioaccumulation from environment to food chain**
@@ -128,7 +128,7 @@ Example: A Superfund site contaminating agricultural water supply can be linked 
 - OSHA-style design aesthetic
 - Mindfulness prompts in safety language
 - Weatherproof for hard hats and equipment
-- QR codes linking to MISS database
+- QR codes linking to MSDS database
 
 **Revenue Model:** $5 singles, $12 3-packs, $35 10-packs
 
@@ -140,7 +140,7 @@ Example: A Superfund site contaminating agricultural water supply can be linked 
 - GHS-style hazard pictograms
 - Signal words (DANGER, WARNING, CAUTION)
 - Specific hazard information (lead, mercury, etc.)
-- QR codes linking to detailed MISS pages
+- QR codes linking to detailed MSDS pages
 
 **Revenue Model:** $7-12 per sticker, $25-35 for sets
 
@@ -197,8 +197,8 @@ Apache-2.0 - See LICENSE file in repository root.
 ## Support
 
 For questions or issues:
-- **Integration Guide:** `../MISS_INTEGRATION_GUIDE.md`
-- **Deployment Help:** `../MISS_DEPLOYMENT_GUIDE.md`
+- **Integration Guide:** `../MSDS_INTEGRATION_GUIDE.md`
+- **Deployment Help:** `../MSDS_DEPLOYMENT_GUIDE.md`
 - **Troubleshooting:** `../deployment_troubleshooting_guide.md`
 
 ---

@@ -27,7 +27,7 @@ export default async function IngredientPage({ params, searchParams }) {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <div className="bg-yellow-400 border-4 border-black p-8 mb-8">
+      <div className={`bg-yellow-400 border-4 border-black p-8 mb-8`}>
         <div className="flex items-center gap-4 mb-4">
           {ingredient.pictograms?.map((pictogram, idx) => (
             <img 
@@ -41,6 +41,29 @@ export default async function IngredientPage({ params, searchParams }) {
         <h1 className="text-4xl font-bold mb-2">{ingredient.signal_word}: {ingredient.name}</h1>
         <p className="text-xl">{ingredient.description}</p>
       </div>
+
+      {/* Scoring Section */}
+      <section className="mb-8">
+        <h2 className="text-3xl font-bold mb-4">MSDS Score: {ingredient.total_score}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="bg-gray-100 p-4 rounded">
+            <h3 className="font-semibold">Health Hazard</h3>
+            <p className="text-2xl font-bold">{ingredient.health_hazard_score}</p>
+          </div>
+          <div className="bg-gray-100 p-4 rounded">
+            <h3 className="font-semibold">Exposure Frequency</h3>
+            <p className="text-2xl font-bold">{ingredient.exposure_frequency_score}</p>
+          </div>
+          <div className="bg-gray-100 p-4 rounded">
+            <h3 className="font-semibold">Contamination Intensity</h3>
+            <p className="text-2xl font-bold">{ingredient.contamination_intensity_score}</p>
+          </div>
+          <div className="bg-gray-100 p-4 rounded">
+            <h3 className="font-semibold">Transparency</h3>
+            <p className="text-2xl font-bold">{ingredient.transparency_score}</p>
+          </div>
+        </div>
+      </section>
 
       {/* Hazard Identification */}
       <section className="mb-8">
@@ -61,15 +84,30 @@ export default async function IngredientPage({ params, searchParams }) {
         </div>
       </section>
 
-      {/* Common Sources */}
+      {/* Common Sources & Processing */}
       <section className="mb-8">
-        <h2 className="text-3xl font-bold mb-4">Where It's Found</h2>
-        <div className="flex flex-wrap gap-2">
-          {ingredient.common_sources?.map((source, idx) => (
-            <span key={idx} className="bg-orange-200 px-4 py-2 rounded-full">
-              {source}
-            </span>
-          ))}
+        <h2 className="text-3xl font-bold mb-4">Sources & Processing</h2>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Common Sources</h3>
+          <div className="flex flex-wrap gap-2">
+            {ingredient.common_sources?.map((source, idx) => (
+              <span key={idx} className="bg-orange-200 px-4 py-2 rounded-full">
+                {source}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Processing Methods</h3>
+          <div className="space-y-2">
+            {ingredient.processing_methods?.map((method, idx) => (
+              <div key={idx} className="bg-blue-100 p-4 rounded">
+                <p className="font-semibold">{method.name}</p>
+                <p>{method.description}</p>
+                {method.notes && <p className="text-sm italic mt-2">Notes: {method.notes}</p>}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

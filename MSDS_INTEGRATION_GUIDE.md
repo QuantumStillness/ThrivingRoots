@@ -1,4 +1,4 @@
-# MISS Integration Guide for ThrivingRoots
+# MSDS Integration Guide for ThrivingRoots
 
 **Version:** 1.0  
 **Author:** Manus AI for 48AXIOM  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This guide explains how to integrate the **Mindful Ingredient Safety Standard (MISS)** food safety module into the ThrivingRoots environmental intelligence platform. The integration creates a unified system where environmental contamination data and food safety information coexist in a shared Supabase backend.
+This guide explains how to integrate the **Mindful Substance Data Series (MSDS)** food safety module into the ThrivingRoots environmental intelligence platform. The integration creates a unified system where environmental contamination data and food safety information coexist in a shared Supabase backend.
 
 ---
 
@@ -40,7 +40,7 @@ This guide explains how to integrate the **Mindful Ingredient Safety Standard (M
 To avoid table name conflicts, we use prefixed naming:
 
 - **Environmental tables:** `env_*` prefix
-- **MISS tables:** `miss_*` prefix
+- **MSDS tables:** `miss_*` prefix
 - **Shared tables:** No prefix (e.g., `users`, `shared_analytics`)
 
 ### Complete Schema Structure
@@ -54,7 +54,7 @@ Supabase Database: zewfpzlmacefmgwsifda
 │   ├── env_scraper_jobs             (Web scraping configuration)
 │   └── env_data_log                 (Scraper audit trail)
 │
-├── MISS Module (miss_*)
+├── MSDS Module (miss_*)
 │   ├── miss_categories              (Ingredient categories)
 │   ├── miss_pictograms              (GHS-style hazard symbols)
 │   ├── miss_ingredients             (Core ingredient data)
@@ -90,15 +90,15 @@ Execute these SQL files in the Supabase SQL Editor:
    - Creates `env_*` tables for Superfund site data
    - Sets up web scraping infrastructure
 
-2. **MISS Schema** (`miss_database_schema.sql`)
+2. **MSDS Schema** (`miss_database_schema.sql`)
    - Creates `miss_*` tables for food ingredient data
    - Sets up GHS-style hazard framework
 
-3. **MISS API & RLS** (`miss_api_and_rls.sql`)
+3. **MSDS API & RLS** (`miss_api_and_rls.sql`)
    - Creates Row Level Security policies
    - Creates PostgreSQL functions for API endpoints
 
-4. **MISS Sample Data** (`miss_sample_data.sql`)
+4. **MSDS Sample Data** (`miss_sample_data.sql`)
    - Populates 5 flagship ingredients
    - Adds pictograms and references
 
@@ -120,7 +120,7 @@ You should see 12 tables total (5 env + 7 miss).
 
 ### Phase 2: Repository Structure (15 minutes)
 
-#### 2.1 Create MISS Module Directory
+#### 2.1 Create MSDS Module Directory
 
 In the ThrivingRoots repository root, create:
 
@@ -130,7 +130,7 @@ mkdir -p food-safety-intelligence/database
 mkdir -p food-safety-intelligence/sticker-designs
 ```
 
-#### 2.2 Copy MISS Files
+#### 2.2 Copy MSDS Files
 
 Copy the following files into the new directory structure:
 
@@ -183,7 +183,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 ```bash
 cd /path/to/ThrivingRoots
 git add .
-git commit -m "Add MISS food safety module"
+git commit -m "Add MSDS food safety module"
 git push origin main
 ```
 
@@ -248,7 +248,7 @@ WHERE esfi.confidence_level IN ('HIGH', 'MODERATE')
 ORDER BY es.name;
 ```
 
-#### 4.3 Update MISS Ingredient Pages
+#### 4.3 Update MSDS Ingredient Pages
 
 Modify `miss-nextjs-app/app/miss/[slug]/page.js` to display nearby environmental hazards:
 
@@ -388,10 +388,10 @@ SELECT record_sticker_scan('sticker-01-lead', 'lead-in-spices');
 
 For questions or issues with this integration, refer to:
 
-- **MISS Deployment Guide:** `MISS_DEPLOYMENT_GUIDE.md`
+- **MSDS Deployment Guide:** `MSDS_DEPLOYMENT_GUIDE.md`
 - **Learning Resources:** `learning_resources_guide.md`
 - **Troubleshooting:** `deployment_troubleshooting_guide.md`
 
 ---
 
-**Congratulations! You've successfully integrated the MISS food safety module into ThrivingRoots.**
+**Congratulations! You've successfully integrated the MSDS food safety module into ThrivingRoots.**
